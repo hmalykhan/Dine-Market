@@ -3,7 +3,7 @@ import {Button} from "./button";
 import { ShoppingCart } from "lucide-react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "@/store/slice/cartSlice";
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 const CartButton=()=>{
     const dispatch=useDispatch();
     const addToCart=()=>{
