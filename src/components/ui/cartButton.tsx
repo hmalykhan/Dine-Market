@@ -3,12 +3,12 @@ import {Button} from "./button";
 import { ShoppingCart } from "lucide-react";
 import { useDispatch } from "react-redux";
 import { cartActions } from "@/store/slice/cartSlice";
-import toast from 'react-hot-toast';
+import Toast from 'react-hot-toast';
 const CartButton=()=>{
     const dispatch=useDispatch();
     const addToCart=()=>{
         dispatch(cartActions.AddtoCart({quantity:1}));
-        toast.success("product has been added successfully.")
+        Toast.success("product has been added successfully.")
     };
     const removeFromCart=()=>{
         dispatch(cartActions.RemoveFromCart({}));
