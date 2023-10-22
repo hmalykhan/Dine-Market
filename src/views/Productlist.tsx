@@ -20,7 +20,7 @@ const Productlist = async() =>{
             {
                 ProductsChunks.map((product:any,id:number)=>(
                     // <ProductCard key={product.id} title={product.name} catagory={product.catagory} tagline={product.tagline} price={product.price} img={p1}  id={product.id}/>
-                    <div className="grid col-span-1 mt-20 place-content-center">
+                    <div key={id} className="grid col-span-1 mt-20 place-content-center">
                     {/* <Image width={600} height={600} src={`/../public/prod${id+1}.png`} alt="product 1" className="w-[400px] mb-[20px] hover:w-[420px] hover:mb-0 duration-300"/>
                     <h3 className="pt-3 font-semibold">this is the category.</h3>
                     <h3 className="font-bold text-lg">$price</h3> */}

@@ -42,9 +42,9 @@ const sign=["+","-"]
           <h3 className="text-base font-semibold my-2">Select Size</h3>
         </div>
        <div className="flex gap-x-5">
-       {size.map((item)=>{
+       {size.map((item,id:number)=>{
           return(
-            <div className="h-10 w-10 rounded-full border duration-500  bg-white flex justify-center items-center hover:shadow-2xl mt-2"><span className="text-[10]  text-gray-500 font-semibold">{item}</span></div>
+            <div key={id} className="h-10 w-10 rounded-full border duration-500  bg-white flex justify-center items-center hover:shadow-2xl mt-2"><span className="text-[10]  text-gray-500 font-semibold">{item}</span></div>
           )
         })}
        </div>
